@@ -1,0 +1,7 @@
+ ______*** EMPLOYEE WITH HIGHEST SALARY ***______ :
+NAME : majahar
+ID : 9801
+SALARY : 60000
+EXPERIENCE : 4
+
+
