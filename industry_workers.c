@@ -11,6 +11,7 @@ int details(struct employee *p,int);
 int sorting(struct employee *k,int);
 int highest_salary(struct employee *a,int);
 int experience(struct employee *b,int);
+int quit();
 int choice(struct employee *y,int); 
 int main(){
     printf("         ~~~~~~=== WELCOME TO DELTA INDUSTRIES ===~~~~~~        \n");
@@ -47,10 +48,10 @@ int choice(struct employee *y,int size){
     printf(" 2(choice) for printing the employees by salary wise(ascending order)\n\n");
     printf(" 3(choice) for highest salary employee details\n\n"); 
     printf(" 4(choice) high experience employee\n\n");
+    printf(" 5(choice) for QUIT the program\n\n");
     printf("\n");
-    printf("ENTER YOUR CHOICE  (1/2/3/4) :"); 
+    printf("ENTER YOUR CHOICE  (1/2/3/4/5) :"); 
     scanf("%i",&n); 
-    printf("     ~~~~~~ THANK YOU FOR GIVING US DETAILS ~~~~~~");
     if(n == 1){
         details(y,size);
     }
@@ -60,9 +61,13 @@ int choice(struct employee *y,int size){
     else if(n == 3){
         highest_salary(y,size); 
     }
-    else{
+    else if(n == 4){
         experience(y,size);
     }
+    else{
+        quit();
+    }
+    printf("     ~~~~~~ THANK YOU FOR GIVING US DETAILS ~~~~~~");
     return 0;
 
 }
@@ -169,5 +174,10 @@ int experience(struct employee *b,int size){
     printf("\n"); 
     printf("\n");
     return 0;
-    
 }
+
+/// Quiting the program:
+int quit(){
+    return 0;
+}
+
